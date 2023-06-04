@@ -4,32 +4,42 @@ using UnityEngine;
 
 public class playermovement1 : MonoBehaviour
 {
-    public float movespeed = 5f;
-    public float rotationSpeed = 3f;
-    public float jumpforce = 5f;
-    private CharacterController controller;
-    private float verticalspeed;
-    //public Transform spawnPoint;
+    public float speed = 5f; 
+    public float jumpForce = 5f;
+    private Rigidbody rb; 
+    private bool isGrounded; 
+
     void Start()
     {
-        controller = GetComponent<CharacterController>();
+        rb = GetComponent<Rigidbody>();
     }
 
     void Update()
     {
-        float horizonthalMovement = Input.GetAxis("Horizontal");
-        float verticalMovement = Input.GetAxis("Vertical");
+  
+        float horizontalInput = Input.GetAxis("Horizontal");
+        float verticalInput = Input.GetAxis("Vertical");
 
-        Vector3 movement = (transform.forward * verticalMovement + transform.right * horizonthalMovement) * movespeed * Time.deltaTime;
-        movement.y = verticalspeed * Time.deltaTime;
+        Vector3 direction = new Vector3(horizontalInput, 0, verticalInput);
 
-        if (Input.GetButtonDown("Jump") && controller.isGrounded)
+        transform.Translate(direction * speed * Time.deltaTime);
+
+        if (Input.GetButtonDown("Jump") && isGrounded)
         {
-            verticalspeed = jumpforce;
-
+            rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
         }
+    }
 
-        controller.Move(movement);
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Floor"))
+        {
+            isGrounded = true;
+        }
+    }
 
+    private void OnCollisionExit(Collision collision)
+    {
+        isGrounded = false;
     }
 }
