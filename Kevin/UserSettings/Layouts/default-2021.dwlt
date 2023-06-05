@@ -20,8 +20,13 @@ MonoBehaviour:
     height: 976
   m_ShowMode: 4
   m_Title: Scene
+<<<<<<< Updated upstream
   m_RootView: {fileID: 8}
   m_MinSize: {x: 875, y: 371}
+=======
+  m_RootView: {fileID: 6}
+  m_MinSize: {x: 875, y: 300}
+>>>>>>> Stashed changes
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -99,8 +104,13 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 300}
   m_MaxSize: {x: 24288, y: 24288}
   vertical: 0
+<<<<<<< Updated upstream
   controlID: 1030
 --- !u!114 &5
+=======
+  controlID: 103
+--- !u!114 &3
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -250,6 +260,59 @@ MonoBehaviour:
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
+<<<<<<< Updated upstream
+=======
+--- !u!114 &9
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 10}
+  - {fileID: 5}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1466
+    height: 939
+  m_MinSize: {x: 403, y: 492}
+  m_MaxSize: {x: 10001, y: 14042}
+  vertical: 1
+  controlID: 17
+--- !u!114 &10
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 4}
+  - {fileID: 11}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1466
+    height: 556
+  m_MinSize: {x: 403, y: 221}
+  m_MaxSize: {x: 8003, y: 4021}
+  vertical: 0
+  controlID: 18
+>>>>>>> Stashed changes
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -381,9 +444,15 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< Updated upstream
     m_SelectedIDs: 06770000
     m_LastClickedID: 30470
     m_ExpandedIDs: 00000000ea76000000ca9a3b
+=======
+    m_SelectedIDs: ea760000
+    m_LastClickedID: 30442
+    m_ExpandedIDs: 00000000e876000000ca9a3b
+>>>>>>> Stashed changes
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -541,9 +610,15 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
+<<<<<<< Updated upstream
       m_SelectedIDs: 665a0000
       m_LastClickedID: 23142
       m_ExpandedIDs: 32fbffff
+=======
+      m_SelectedIDs: d2570000
+      m_LastClickedID: 22482
+      m_ExpandedIDs: 34fbffff
+>>>>>>> Stashed changes
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -826,9 +901,15 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< Updated upstream
     m_Target: {x: -153.15643, y: -456.0956, z: -753.032}
     speed: 2
     m_Value: {x: -153.15643, y: -456.0956, z: -753.032}
+=======
+    m_Target: {x: -1446.2762, y: 14.685424, z: 154.07544}
+    speed: 2
+    m_Value: {x: -1446.4098, y: 14.672456, z: 154.075}
+>>>>>>> Stashed changes
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -875,6 +956,7 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
+<<<<<<< Updated upstream
     m_Target: {x: -0.07703971, y: -0.8498391, z: 0.12789588, w: -0.50619656}
     speed: 2
     m_Value: {x: -0.07681884, y: -0.85027707, z: 0.12796307, w: -0.50473106}
@@ -882,6 +964,15 @@ MonoBehaviour:
     m_Target: 940.4066
     speed: 2
     m_Value: 940.4066
+=======
+    m_Target: {x: 0.011858979, y: 0.9871177, z: -0.08789729, w: 0.13318776}
+    speed: 2
+    m_Value: {x: 0.011727079, y: 0.987313, z: -0.087914675, w: 0.13170648}
+  m_Size:
+    m_Target: 4.2239337
+    speed: 2
+    m_Value: 4.042042
+>>>>>>> Stashed changes
   m_Ortho:
     m_Target: 0
     speed: 2
