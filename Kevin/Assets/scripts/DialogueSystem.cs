@@ -3,27 +3,24 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class GetTask : MonoBehaviour
+public class DialogueSystem : MonoBehaviour
 {
-    // Start is called before the first frame update
-    [SerializeField] List<GameObject> acorns;
     public TextMeshProUGUI textComponent;
     public string[] lines;
     public float textSpeed;
     private int index;
-    private bool hasTask;
+    public GetTask getTaskFromPlayer;
+    // Start is called before the first frame update
     void Start()
     {
-        hasTask = false;    
         textComponent.text = string.Empty;
-        acorns.ForEach(x => x.SetActive(false));
     }
 
     // Update is called once per frame
     void Update()
     {
-        getOKeyBoard();
-        if (getOKeyBoard() == true && hasTask == true)
+        StartDialogue();
+        if (Input.GetKeyDown(KeyCode.O))
         {
             if (textComponent.text == lines[index])
             {
@@ -37,20 +34,6 @@ public class GetTask : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Task"))
-        {
-            if (getOKeyBoard() == true)
-            {
-                Debug.Log("Log from collision");
-            }
-            StartDialogue();
-            Destroy(collision.gameObject);
-            acorns.ForEach(x => x.SetActive(true));
-            hasTask = true;
-        }
-    }
     void StartDialogue()
     {
         index = 0;
@@ -68,7 +51,7 @@ public class GetTask : MonoBehaviour
 
     void NextLine()
     {
-        if (index < lines.Length - 1)
+        if (index < lines.Length - 1 )
         {
             index++;
             textComponent.text = string.Empty;
@@ -78,14 +61,5 @@ public class GetTask : MonoBehaviour
         {
             textComponent.gameObject.SetActive(false);
         }
-    }
-
-    private bool getOKeyBoard()
-    {
-        if (Input.GetKeyDown(KeyCode.O))
-        {
-            return true;
-        }
-        return false;
     }
 }
