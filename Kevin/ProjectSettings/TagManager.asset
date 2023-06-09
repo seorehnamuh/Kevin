@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Floor
   - Acorn
+  - Bullet_Rock
   layers:
   - Default
   - TransparentFX
