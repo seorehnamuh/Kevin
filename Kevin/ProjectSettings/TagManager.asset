@@ -8,6 +8,7 @@ TagManager:
   - Acorn
   - Bullet_Rock
   - Task
+  - Trees
   layers:
   - Default
   - TransparentFX
