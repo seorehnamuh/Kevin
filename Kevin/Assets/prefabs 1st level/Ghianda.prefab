@@ -258,9 +258,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8894928919029566378}
+  - component: {fileID: 8044843355312530814}
   m_Layer: 0
   m_Name: Ghianda
-  m_TagString: Untagged
+  m_TagString: Acorn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -283,3 +284,16 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &8044843355312530814
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8087042256725020944}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.4671552, y: 3.516969, z: 2.1708717}
+  m_Center: {x: 0.025519349, y: 3.0871754, z: 0.006248792}
