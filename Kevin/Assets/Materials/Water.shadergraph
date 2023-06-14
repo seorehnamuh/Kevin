@@ -740,7 +740,7 @@
     "m_ShaderOutputName": "Tiling",
     "m_StageCapability": 3,
     "m_Value": {
-        "x": 1.0,
+        "x": 2.0,
         "y": 1.0
     },
     "m_DefaultValue": {
@@ -1448,7 +1448,7 @@
     "m_ShaderOutputName": "Edge2",
     "m_StageCapability": 3,
     "m_Value": {
-        "x": 5.0,
+        "x": 6.0,
         "y": 1.0,
         "z": 1.0,
         "w": 1.0
@@ -2620,7 +2620,7 @@
     "m_Hidden": false,
     "m_ShaderOutputName": "CellDensity",
     "m_StageCapability": 3,
-    "m_Value": 8.0,
+    "m_Value": 5.0,
     "m_DefaultValue": 5.0,
     "m_Labels": []
 }
