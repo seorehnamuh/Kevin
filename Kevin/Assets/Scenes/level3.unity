@@ -6350,6 +6350,7 @@ GameObject:
   - component: {fileID: 1351145340}
   - component: {fileID: 1351145339}
   - component: {fileID: 1351145338}
+  - component: {fileID: 1351145342}
   m_Layer: 0
   m_Name: floor
   m_TagString: Floor
@@ -6435,6 +6436,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1351145342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1351145337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e9752f5cc5060143b74258f5bb8c6b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1363165111
 GameObject:
   m_ObjectHideFlags: 0
@@ -8763,7 +8776,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1992644612850291176, guid: 22b2ca74d6c213144a8935fd3849144f, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1992644612850291176, guid: 22b2ca74d6c213144a8935fd3849144f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10963,6 +10976,7 @@ GameObject:
   - component: {fileID: 2055833803}
   - component: {fileID: 2055833802}
   - component: {fileID: 2055833801}
+  - component: {fileID: 2055833805}
   m_Layer: 0
   m_Name: floor (1)
   m_TagString: Untagged
@@ -11046,8 +11060,20 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2055833805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2055833800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e9752f5cc5060143b74258f5bb8c6b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2068183572
 GameObject:
   m_ObjectHideFlags: 0
@@ -11493,7 +11519,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8916619946500709288, guid: 72e7de499b9262042b357b79a55b54ed, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8916619946500709288, guid: 72e7de499b9262042b357b79a55b54ed, type: 3}
       propertyPath: m_LocalPosition.x
