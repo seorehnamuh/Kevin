@@ -6,16 +6,24 @@ public class SingletonAcorns : MonoBehaviour
 {
 
     private float numberOfAcorns;
-        
+    private float numberOfAcornsToOpenTheGate;
+    public GameObject gate;
+    private Animator gateAnimator;
    
     void Start()
     {
         numberOfAcorns = 0;
+        numberOfAcornsToOpenTheGate = 10;
+        gateAnimator = gate.GetComponent<Animator>();
     }
 
     
     void Update()
     {
+        if (numberOfAcorns == numberOfAcornsToOpenTheGate)
+        {
+            gateAnimator.SetBool("isOpening", true);
+        }
     }
     private void OnCollisionEnter(Collision collision)
     {
