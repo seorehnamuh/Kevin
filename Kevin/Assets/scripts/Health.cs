@@ -16,8 +16,8 @@ public class Health : MonoBehaviour
     }
 
     private void OnTriggerEnter(Collider other)
-            {
-             TakeDamage(20);
+    {
+        TakeDamage(20);
     }
 
 
@@ -31,7 +31,7 @@ public class Health : MonoBehaviour
             //    TakeDamage(20);
             //}
 
-        }
+    }
 
         void TakeDamage(int damage)
     {

@@ -2389,7 +2389,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 150996278}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2034.1, y: -10.3, z: -248.56}
+  m_LocalPosition: {x: 2034.1, y: -11.3, z: -248.56}
   m_LocalScale: {x: 84.45803, y: 8.982924, z: 145.62207}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5610,7 +5610,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 287095751}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 565, y: 5.4, z: 12}
+  m_LocalPosition: {x: -1317, y: 5.4, z: 12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -10823,7 +10823,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 539399591}
-  m_LocalRotation: {x: 0.11361179, y: -0.037909217, z: 0.0043382025, w: 0.99279225}
+  m_LocalRotation: {x: 0.11361317, y: -0.037590265, z: 0.0043017035, w: 0.9928044}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -22963,8 +22963,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1108133561}
-  m_LocalRotation: {x: 0.11361179, y: -0.037909225, z: 0.004338204, w: 0.99279225}
-  m_LocalPosition: {x: 565, y: 15.4, z: -22}
+  m_LocalRotation: {x: 0.11361318, y: -0.037590265, z: 0.004301703, w: 0.99280435}
+  m_LocalPosition: {x: -1317, y: 15.4, z: -22}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -29729,7 +29729,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1411115243}
-  m_LocalRotation: {x: 0.10649046, y: 0.0000000042771338, z: -4.580787e-10, w: 0.9943138}
+  m_LocalRotation: {x: 0.10649046, y: -0.0000000042771364, z: 4.5807902e-10, w: 0.9943138}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -30412,7 +30412,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1427553745}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1845, y: 7.124113, z: -217.6}
+  m_LocalPosition: {x: -37, y: 7.124113, z: -217.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -39154,7 +39154,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1845482486}
-  m_LocalRotation: {x: 0.14253858, y: -0.000000008515345, z: 0.0000000012262865, w: 0.98978925}
+  m_LocalRotation: {x: 0.14253858, y: 0.000000008515345, z: -0.0000000012262865, w: 0.98978925}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -41774,6 +41774,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2457573979939471652, guid: 7f6ec02060e15ba48a29f562ec64dc65, type: 3}
+      propertyPath: jumpForce
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 2517197671157874708, guid: 7f6ec02060e15ba48a29f562ec64dc65, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
@@ -42076,7 +42080,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 112
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!65 &1944910770
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -42116,8 +42120,8 @@ MonoBehaviour:
   textComponent: {fileID: 201047002}
   lines:
   - Press [O] to skip the dialogues.
-  - 'Orfeo: "Hi Kevin! Collect all acornn to open the gate."'
-  - Ok, Orfeo. No problem
+  - 'Orfeo: "Hi Kevin! Collect all acorn to open the gate."'
+  - 'Kevin: "Ok, Orfeo. No problem!"'
   textSpeed: 0.05
 --- !u!114 &1944910772
 MonoBehaviour:

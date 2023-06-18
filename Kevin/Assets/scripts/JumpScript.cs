@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class JumpScript : MonoBehaviour
 {
-    public float jumpForce = 5f; 
+    public float jumpForce = 10f; 
     private Rigidbody rb;
     private bool isGrounded;
    
