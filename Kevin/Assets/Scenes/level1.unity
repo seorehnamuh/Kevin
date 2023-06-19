@@ -5598,6 +5598,7 @@ GameObject:
   - component: {fileID: 287095765}
   - component: {fileID: 287095767}
   - component: {fileID: 287095766}
+  - component: {fileID: 287095768}
   m_Layer: 0
   m_Name: Third person Kevin
   m_TagString: Player
@@ -5744,6 +5745,20 @@ MonoBehaviour:
   - 'Orfeo: "Hi Kevin! Collect all acorn to open the gate."'
   - 'Kevin: "Ok, Orfeo. No problem!"'
   textSpeed: 0.05
+--- !u!136 &287095768
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 287095751}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &292957294
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10884,7 +10899,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 539399591}
-  m_LocalRotation: {x: 0.11359379, y: -0.04182604, z: 0.0047864304, w: 0.99263495}
+  m_LocalRotation: {x: 0.113595866, y: -0.041392364, z: 0.0047368025, w: 0.99265313}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -23118,7 +23133,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1108133561}
-  m_LocalRotation: {x: 0.11359379, y: -0.041826043, z: 0.004786431, w: 0.99263495}
+  m_LocalRotation: {x: 0.113595866, y: -0.041392367, z: 0.004736802, w: 0.99265313}
   m_LocalPosition: {x: -1317, y: 15.4, z: -22}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -29884,7 +29899,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1411115243}
-  m_LocalRotation: {x: 0.10649046, y: 0.0000000042771338, z: -4.580787e-10, w: 0.9943138}
+  m_LocalRotation: {x: 0.10649046, y: -0.0000000042771364, z: 4.5807902e-10, w: 0.9943138}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0

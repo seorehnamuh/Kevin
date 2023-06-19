@@ -41,6 +41,7 @@ public class GetTask : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Task"))
         {
+            Debug.Log("hit");
             if (getOKeyBoard() == true)
             {
                 Debug.Log("Log from collision");
@@ -51,6 +52,8 @@ public class GetTask : MonoBehaviour
             hasTask = true;
         }
     }
+
+  
     void StartDialogue()
     {
         index = 0;
