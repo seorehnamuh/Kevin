@@ -13,7 +13,7 @@ public class Shot : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0)) // Verifica se il pulsante sinistro del mouse è stato premuto
+        if (Input.GetKeyDown(KeyCode.Tab)) // Verifica se il pulsante sinistro del mouse è stato premuto
         {
             GameObject projectile = Instantiate(ProjectilePrefab, spawnPoint.position, spawnPoint.rotation);
             // Istanza il prefab del proiettile nel punto di spawn con la rotazione del punto di spawn
