@@ -28,8 +28,10 @@ public class PlayerBehaviour : MonoBehaviour
 
         rigidBody = GetComponent<Rigidbody>(); // Acquisizione del Rigidbody del personaggio
 
-        rigidBody.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ;
-        // Blocca la rotazione del Rigidbody per evitare rotazioni indesiderate
+        rigidBody.constraints = RigidbodyConstraints.FreezeRotationX;
+        rigidBody.constraints = RigidbodyConstraints.FreezeRotationY;
+        rigidBody.constraints = RigidbodyConstraints.FreezeRotationZ;
+
 
         cam = Camera.main.transform; // Acquisizione della telecamera principale
     }
@@ -78,10 +80,10 @@ public class PlayerBehaviour : MonoBehaviour
         turnAmount = Mathf.Atan2(move.x, move.z); // Calcola la quantità di rotazione richiesta
         forwardAmount = move.z; // Calcola la quantità di movimento in avanti richiesta
 
-        float turnSpeed = Mathf.Lerp(stationaryTurnSpeed, movingTurnSpeed, forwardAmount);
+        float TurnSpeed = Mathf.Lerp(stationaryTurnSpeed, movingTurnSpeed, forwardAmount);
         // Calcola la velocità di rotazione richiesta in base alla quantità di movimento in avanti
 
-        transform.Rotate(0f, turnAmount * turnSpeed * Time.deltaTime, 0f);
+        transform.Rotate(0f, turnAmount * TurnSpeed * Time.deltaTime, 0f);
         // Ruota il personaggio in base alla quantità di rotazione richiesta
 
         if (move.magnitude > 0.1f)
