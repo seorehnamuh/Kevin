@@ -42,16 +42,11 @@ public class playermovement1 : MonoBehaviour
         // Applica la velocità di movimento al Character Controller
         characterController.Move(movementDirection * movementSpeed * Time.deltaTime);
 
-        // Gestione del salto
-        /*if (characterController.isGrounded)
-        {
-            verticalVelocity = 0f; // Resettiamo la velocità verticale quando tocca il suolo
-            isJumping = false;
-        }*/
+       
 
         if (characterController.isGrounded) isJumping = false;
 
-            if (Input.GetButtonDown("Jump") && !isJumping)
+        if (Input.GetButtonDown("Jump") && !isJumping)
         {
             isJumping = true;
             verticalVelocity = jumpForce;
