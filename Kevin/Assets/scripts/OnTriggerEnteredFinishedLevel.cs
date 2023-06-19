@@ -7,7 +7,7 @@ public class OnTriggerEnteredFinishedLevel : MonoBehaviour
 {
   
 
-    private void OnTriggerEnter(Collision other)
+    private void OnTriggerEnter(Collider other)
     {
         
 

@@ -45,11 +45,11 @@ public class testmove : MonoBehaviour
         // Gestione del salto
         if (characterController.isGrounded)
         {
-            verticalVelocity = 0f; // Resettiamo la velocità verticale quando tocca il suolo
+           
             isJumping = false;
         }
 
-        if (Input.GetButtonDown("Jump") && characterController.isGrounded)
+        if (Input.GetButtonDown("Jump") && !isJumping)
         {
             isJumping = true;
             verticalVelocity = jumpForce;
