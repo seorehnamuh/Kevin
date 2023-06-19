@@ -7,8 +7,8 @@ public class Third_Person_Script : MonoBehaviour
     public float jumpPower = 2f; // Potenza del salto
     public float moveSpeedMultiplier = 4f; // Moltiplicatore di velocità del movimento
 
-    private float movingTurnSpeed = 360f; // Velocità di rotazione in movimento
-    private float stationaryTurnSpeed = 180f; // Velocità di rotazione fermo
+    public float movingTurnSpeed = 360f; // Velocità di rotazione in movimento
+    public float stationaryTurnSpeed = 180f; // Velocità di rotazione fermo
     private Rigidbody rigidBody; // Riferimento al Rigidbody del personaggio
     private bool isGrounded; // Flag per indicare se il personaggio è a terra
     private float turnAmount; // Quantità di rotazione richiesta
@@ -19,8 +19,10 @@ public class Third_Person_Script : MonoBehaviour
     private Vector3 move; // Direzione del movimento
     private bool jump; // Flag per indicare se il personaggio deve saltare
 
+
     private void Start()
     {
+
         rigidBody = GetComponent<Rigidbody>(); // Acquisizione del Rigidbody del personaggio
 
         rigidBody.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ;
@@ -45,7 +47,7 @@ public class Third_Person_Script : MonoBehaviour
         if (cam != null)
         {
             camForward = Vector3.Scale(cam.forward, new Vector3(1, 0, 1)).normalized;
-            // Calcolo della direzione in avanti della telecamera sulla pianta orizzontale
+            // Calcolo della direzione di movimento relativa alla telecamera
             move = v * camForward + h * cam.right;
         }
         else
@@ -71,7 +73,7 @@ public class Third_Person_Script : MonoBehaviour
         // Proietta il vettore di movimento sulla superficie del terreno per evitare movimenti in pendenza
 
         turnAmount = Mathf.Atan2(move.x, move.z); // Calcola la quantità di rotazione richiesta
-        forwardAmount = 1f; // Imposta la quantità di movimento in avanti su 1 (sempre in avanti rispetto alla telecamera)
+        forwardAmount = move.z; // Calcola la quantità di movimento in avanti richiesta
 
         float turnSpeed = Mathf.Lerp(stationaryTurnSpeed, movingTurnSpeed, forwardAmount);
         // Calcola la velocità di rotazione richiesta in base alla quantità di movimento in avanti
@@ -82,6 +84,8 @@ public class Third_Person_Script : MonoBehaviour
         if (move.magnitude > 0.1f)
         {
             transform.Translate(move * moveSpeedMultiplier * Time.deltaTime, Space.Self);
+
+
             // Sposta il personaggio in base alla direzione di movimento e alla velocità di movimento moltiplicata per il delta time
         }
 
@@ -100,7 +104,6 @@ public class Third_Person_Script : MonoBehaviour
             isGrounded = true; // Imposta il personaggio come "a terra"
         }
     }
-
 
 }
 
