@@ -252,9 +252,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 20
+  m_MaxValue: 100
   m_WholeNumbers: 1
-  m_Value: 1
+  m_Value: 100
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -3694,6 +3694,7 @@ GameObject:
   - component: {fileID: 755687324}
   - component: {fileID: 755687323}
   - component: {fileID: 755687322}
+  - component: {fileID: 755687327}
   - component: {fileID: 755687321}
   - component: {fileID: 755687320}
   - component: {fileID: 755687319}
@@ -3856,7 +3857,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   currentHealth: 100
-  healthBar: {fileID: 18155980}
+  healthSlider: {fileID: 18155981}
+--- !u!114 &755687327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 755687317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 327be675e5dd54bc28030caca8003bb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageAmount: 2
 --- !u!1 &758582739 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 361473621363267892, guid: 88f39aa6947a052479f1071d6bb6baa3, type: 3}
@@ -5338,7 +5352,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1009807319}
-  m_LocalRotation: {x: 0.11356322, y: -0.04774592, z: 0.005463881, w: 0.9923678}
+  m_LocalRotation: {x: 0.113609284, y: -0.038477518, z: 0.004403237, w: 0.9927704}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -7300,6 +7314,24 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1 &1261422944 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3027022523246957843, guid: d17ce6bc0c8d1fd4494663ce1138732a, type: 3}
+  m_PrefabInstance: {fileID: 3027022522883112824}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1261422951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1261422944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c04a04a2171f4311a10e8aa628ef972, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageAmount: 10
 --- !u!1 &1263915398
 GameObject:
   m_ObjectHideFlags: 0
@@ -8348,7 +8380,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1351769783}
-  m_LocalRotation: {x: 0.113563225, y: -0.04774592, z: 0.0054638814, w: 0.9923678}
+  m_LocalRotation: {x: 0.11360927, y: -0.03847752, z: 0.0044032373, w: 0.9927704}
   m_LocalPosition: {x: 86.63, y: 19.25, z: -16.42}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -12724,7 +12756,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1854069751}
-  m_LocalRotation: {x: 0.10649046, y: -0.0000000042771364, z: 4.5807902e-10, w: 0.9943138}
+  m_LocalRotation: {x: 0.10649046, y: 0.0000000042771338, z: -4.580787e-10, w: 0.9943138}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -13688,6 +13720,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2033355229}
+  - component: {fileID: 2033355230}
   m_Layer: 0
   m_Name: Kevin FreeLook Camera
   m_TagString: Untagged
@@ -13712,6 +13745,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2033355230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2033355228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 327be675e5dd54bc28030caca8003bb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageAmount: 10
 --- !u!1 &2055833800
 GameObject:
   m_ObjectHideFlags: 0
@@ -14885,9 +14931,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Capsule
       objectReference: {fileID: 0}
-    - target: {fileID: 3027022523246957844, guid: d17ce6bc0c8d1fd4494663ce1138732a, type: 3}
-      propertyPath: target
-      value: 
+    - target: {fileID: 3027022523246957846, guid: d17ce6bc0c8d1fd4494663ce1138732a, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d17ce6bc0c8d1fd4494663ce1138732a, type: 3}

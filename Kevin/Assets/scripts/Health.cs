@@ -15,28 +15,50 @@ public class Health : MonoBehaviour
         healthBar.SetMaxHealth(maxHealth);
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collision collision)
     {
-        TakeDamage(20);
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            TakeDamage(10);
+        }
     }
 
-
-    // Update is called once per frame
-    void Update()
+    private void TakeDamage(int amount)
     {
-      
+        currentHealth -= amount;
+        Debug.Log("Player took " + amount + " damage. Current health: " + currentHealth);
 
-            //if (Input.GetKeyDown(KeyCode.Space))
-            //{
-            //    TakeDamage(20);
-            //}
-
+        if (currentHealth <= 0)
+        {
+            Die();
+        }
     }
 
-        void TakeDamage(int damage)
+    private void Die()
     {
-        currentHealth -= damage;
-
-        healthBar.SetHealth(currentHealth);
+        // TODO: Implement player death logic
+        Debug.Log("Player has died.");
     }
+
+   
 }
+
+// private void OnTriggerEnter(Collider other)
+// {
+//   TakeDamage(20);
+// }
+
+
+// Update is called once per frame
+// void Update()
+//{
+
+
+    //if (Input.GetKeyDown(KeyCode.Space))
+    //{
+    //    TakeDamage(20);
+    //}
+
+//}
+
+//}

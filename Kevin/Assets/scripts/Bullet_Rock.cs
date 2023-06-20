@@ -16,7 +16,7 @@ public class Bullet_Rock : MonoBehaviour
 
         if (collision.gameObject.tag == "Enemy")
         {
-           collision.gameObject.GetComponent<Health>().currentHealth -= 10;
+           collision.gameObject.GetComponent<PlayerHealth>().currentHealth -= 10;
         }
 
         else
