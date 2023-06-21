@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2380810}
   - component: {fileID: 1969374337}
   - component: {fileID: 3477610281680742521}
+  - component: {fileID: -5991684773688169871}
   m_Layer: 0
   m_Name: Rock Type2 04
   m_TagString: Bullet_Rock
@@ -97,8 +98,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5f973bce5d8c4f128a9e51375208679, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
-  isEnemyShot: 0
+  speed: 5
+  damage: 10
 --- !u!54 &3477610281680742521
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -115,3 +116,16 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &-5991684773688169871
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 119512}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.2151852, y: 0.85753477, z: 1.1476779}
+  m_Center: {x: 0.084005564, y: 0.28504598, z: -0.009593248}

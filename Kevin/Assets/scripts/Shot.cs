@@ -21,9 +21,11 @@ public class Shot : MonoBehaviour
             Rigidbody rb = projectile.GetComponent<Rigidbody>(); // Ottiene il componente Rigidbody del proiettile
             rb.velocity = spawnPoint.forward * projectileSpeed;
             // Imposta la velocità del proiettile nella direzione in avanti del punto di spawn moltiplicata per la velocità del proiettile
+            rb.AddForce(projectileSpeed * spawnPoint.forward * Time.fixedDeltaTime, ForceMode.Impulse);
 
             Destroy(projectile, TimeToDestroyTheProjectile);
             // Distrugge il proiettile dopo il tempo specificato
         }
     }
+
 }

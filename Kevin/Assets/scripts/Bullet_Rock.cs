@@ -10,7 +10,7 @@ public class Bullet_Rock : MonoBehaviour
     void Update()
     {
         // Move the bullet forward
-        transform.Translate(Vector3.forward * speed * Time.deltaTime);
+    //    transform.Translate(Vector3.forward * speed * Time.deltaTime);
     }
 
     void OnTriggerEnter(Collider other)
