@@ -10,10 +10,10 @@ public class PlayerDamage : MonoBehaviour
     {
         if (other.CompareTag("Enemy"))
         {
-            PlayerHealth playerHealth = GetComponent<PlayerHealth>();
-            if (playerHealth != null)
+            EnemyHealth enemyHealth = GetComponent<EnemyHealth>();
+            if (enemyHealth != null)
             {
-                playerHealth.TakeDamage(damageAmount);
+                enemyHealth.TakeDamage(damageAmount);
             }
         }
     }

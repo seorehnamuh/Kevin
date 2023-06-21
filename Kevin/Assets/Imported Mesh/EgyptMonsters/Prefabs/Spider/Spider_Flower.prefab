@@ -106,6 +106,8 @@ GameObject:
   - component: {fileID: 4308944480718410}
   - component: {fileID: 95844267038306482}
   - component: {fileID: 114642546781802302}
+  - component: {fileID: 69079613351434092}
+  - component: {fileID: 9201382780328197492}
   m_Layer: 0
   m_Name: Spider_Flower
   m_TagString: Untagged
@@ -164,6 +166,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitFX: {fileID: 1394375103646112, guid: a975789f95cfa474499adb569047348e, type: 2}
+--- !u!114 &69079613351434092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1143180963066806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e14f3938324f64a8ca0e48825511f122, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  currentHealth: 0
+  healthSlider: {fileID: 0}
+--- !u!114 &9201382780328197492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1143180963066806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c04a04a2171f4311a10e8aa628ef972, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageAmount: 10
 --- !u!1 &1149313386028478
 GameObject:
   m_ObjectHideFlags: 0
