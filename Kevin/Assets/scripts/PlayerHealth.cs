@@ -10,6 +10,8 @@ public class PlayerHealth : MonoBehaviour
 
     private void Start()
     {
+        healthSlider.maxValue = maxHealth;
+        healthSlider.value = maxHealth;
         currentHealth = maxHealth;
         UpdateHealthUI();
     }
