@@ -10,6 +10,7 @@ public class EnemyHealth : MonoBehaviour
 
     private void Start()
     {
+        healthSlider.value = maxHealth;
         currentHealth = maxHealth;
         UpdateHealthUI();
     }
@@ -34,6 +35,7 @@ public class EnemyHealth : MonoBehaviour
     {
         // Play death animation or perform other actions when the player dies
         Debug.Log("Enemy has died.");
+        Destroy(this.gameObject);
         // Add your own code here for handling the player's death
     }
 }
