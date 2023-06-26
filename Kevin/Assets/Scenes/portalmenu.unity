@@ -1155,14 +1155,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 271583611}
-  m_LocalRotation: {x: 0.1136122, y: -0.03781958, z: 0.004327945, w: 0.99279565}
-  m_LocalPosition: {x: 576.9, y: 15.4, z: -78.2}
+  m_LocalRotation: {x: -0.08715219, y: 0.009049723, z: -0.0007917485, w: -0.9961536}
+  m_LocalPosition: {x: 4.8683004, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Father: {fileID: 876815290}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 10, y: 358.959, z: 0}
 --- !u!4 &309875988 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c7f278f46ecf5314b8c0d9aa4ab363dc, type: 3}
@@ -2204,13 +2204,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 876815287}
-  m_LocalRotation: {x: 0.03240647, y: -0.020855753, z: 0.032978103, w: -0.9987129}
-  m_LocalPosition: {x: -12.5, y: 12.5, z: -35.7}
+  m_LocalRotation: {x: 0.000000018626451, y: -0.71350116, z: 6.9849193e-10, w: -0.70065415}
+  m_LocalPosition: {x: 998.3, y: 15.4, z: -73.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1401288536}
-  m_RootOrder: 5
+  m_Children:
+  - {fileID: 271583614}
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: -3.632, y: 362.515, z: -3.862}
 --- !u!1001 &880130279
 PrefabInstance:
@@ -3566,11 +3567,6 @@ Transform:
 --- !u!1 &1401288535 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1601390034611929716, guid: 7f6ec02060e15ba48a29f562ec64dc65, type: 3}
-  m_PrefabInstance: {fileID: 1995324530}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1401288536 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2121924868404762830, guid: 7f6ec02060e15ba48a29f562ec64dc65, type: 3}
   m_PrefabInstance: {fileID: 1995324530}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &1401288538
