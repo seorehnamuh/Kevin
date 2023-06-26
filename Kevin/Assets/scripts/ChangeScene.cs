@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class ChangeScene : MonoBehaviour
 {
     public bool HasFinishedlevel1 = false;
-    public bool HasFinishedlevel2 = false;
+    //public bool HasFinishedlevel2 = false;
     public bool HasFinishedlevel3 = false;
 
     public static ChangeScene Instance;
@@ -35,12 +35,12 @@ public class ChangeScene : MonoBehaviour
             SceneManager.LoadScene(1);
         }
 
-        if (HasFinishedlevel1 && num == 2)
-        {
-            SceneManager.LoadScene(2);
-        }
+        //if (HasFinishedlevel1 && num == 2)
+        //{
+        //    SceneManager.LoadScene(2);
+        //}
 
-        if (HasFinishedlevel2 && num == 3)
+        if (HasFinishedlevel1 && num == 3)
         {
             SceneManager.LoadScene(3);
         }

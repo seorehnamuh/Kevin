@@ -17,11 +17,11 @@ public class OnTriggerEnteredFinishedLevel : MonoBehaviour
             SceneManager.LoadScene(0);
         }
 
-        if (SceneManager.GetActiveScene().buildIndex == 2)
-        {
-            ChangeScene.Instance.HasFinishedlevel2 = true;
-            SceneManager.LoadScene(0);
-        }
+        //if (SceneManager.GetActiveScene().buildIndex == 2)
+        //{
+        //    ChangeScene.Instance.HasFinishedlevel2 = true;
+        //    SceneManager.LoadScene(0);
+        //}
 
         if (SceneManager.GetActiveScene().buildIndex == 3)
         {
