@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class NextLevelText : MonoBehaviour
 {
@@ -26,6 +27,7 @@ public class NextLevelText : MonoBehaviour
         {
             Debug.Log("Test"); 
             StartCoroutine(ShowMessage("You have been caught, you will be transported in the maze", 5));
+            SceneManager.LoadScene(3);
         }
     }
 }
