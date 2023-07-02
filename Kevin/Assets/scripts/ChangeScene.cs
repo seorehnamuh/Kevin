@@ -35,10 +35,7 @@ public class ChangeScene : MonoBehaviour
             SceneManager.LoadScene(1);
         }
 
-        //if (HasFinishedlevel1 && num == 2)
-        //{
-        //    SceneManager.LoadScene(2);
-        //}
+     
 
         if (HasFinishedlevel1 && num == 3)
         {
@@ -49,17 +46,9 @@ public class ChangeScene : MonoBehaviour
     }
 
 
-
-    // appena ci sarà lo script del cancello, ovvero kevin che oltrepassa il trigger del cancello, inserire .--->
-    // public void OnCollisioneEnter (Collision other)
-    // { 
-    // if(collision.gameObject.compareTag("Player")
-    //   {
-    // ChangeScene.HasFinishedlevel1 = true;
-    // ChangeToScene(2)
-    //   }
-    // }
-
-
+    public void Level1Completed()
+    {
+        HasFinishedlevel1 = true;
+    }
 
 }

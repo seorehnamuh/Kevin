@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/level3.unity
     guid: 24635aeb5ea34244e88dddc98309b24e
+  - enabled: 1
+    path: Assets/Scenes/portalmenu.unity
+    guid: 05859a6262fdeb94a9c18c87d1afd104
   m_configObjects: {}
