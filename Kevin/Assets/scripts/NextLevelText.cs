@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class NextLevelText : MonoBehaviour
 {
     public TextMeshProUGUI nextLevel;
-    public ChangeScene changeSceneManager;
+  
     // Start is called before the first frame update
     void Start()
     {
@@ -28,7 +28,7 @@ public class NextLevelText : MonoBehaviour
         {
             Debug.Log("Test"); 
             StartCoroutine(ShowMessage("You have been caught, you will be transported in the maze", 5));
-            changeSceneManager.Level1Completed();
+            ChangeScene.Instance.Level1Completed();
             SceneManager.LoadScene(4);
         }
     }
