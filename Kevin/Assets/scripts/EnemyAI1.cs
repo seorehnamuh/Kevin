@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
+
 public class EnemyAI1 : MonoBehaviour
 {
     [SerializeField] Transform target;
@@ -12,14 +13,18 @@ public class EnemyAI1 : MonoBehaviour
     float distanceToTarget = Mathf.Infinity;
     bool isProvoked = false;
     [SerializeField] float turnSpeed = 5f;
-
+  
     void Start()
     {
         navMeshAgent = GetComponent<NavMeshAgent>();
+      
+        
     }
 
-    // Update is called once per frame
-    void Update()
+    
+
+// Update is called once per frame
+void Update()
     {
         distanceToTarget = Vector3.Distance(target.position, transform.position);
         if (distanceToTarget <= chaseRange)
@@ -32,7 +37,7 @@ public class EnemyAI1 : MonoBehaviour
 
     private void EngageTarget()
     {
-        FaceTarget();
+       FaceTarget();
         if (distanceToTarget >= navMeshAgent.stoppingDistance)
         {
             ChaseTarget();
@@ -67,4 +72,6 @@ public class EnemyAI1 : MonoBehaviour
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, chaseRange);
     }
+
+
 }
