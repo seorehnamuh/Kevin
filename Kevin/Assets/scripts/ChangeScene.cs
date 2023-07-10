@@ -32,7 +32,7 @@ public class ChangeScene : MonoBehaviour
     {
         if (num == 1)
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(2);
         }
 
      

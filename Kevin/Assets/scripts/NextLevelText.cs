@@ -27,9 +27,9 @@ public class NextLevelText : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             Debug.Log("Test"); 
-            StartCoroutine(ShowMessage("You have been caught, you will be transported in the maze", 5));
+            StartCoroutine(ShowMessage("You have been caught!", 5));
             ChangeScene.Instance.Level1Completed();
-            SceneManager.LoadScene(4);
+            SceneManager.LoadScene(1);
         }
     }
 }
