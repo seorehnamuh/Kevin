@@ -29,7 +29,12 @@ public class NextLevelText : MonoBehaviour
             Debug.Log("Test"); 
             StartCoroutine(ShowMessage("You have been caught!", 5));
             ChangeScene.Instance.Level1Completed();
-            SceneManager.LoadScene(1);
+            StartCoroutine(Changeafter());
         }
+    }
+    IEnumerator Changeafter()
+    {
+        yield return new WaitForSeconds(5);
+        SceneManager.LoadScene(1);
     }
 }
