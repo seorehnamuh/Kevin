@@ -36,5 +36,6 @@ public class SingletonAcorns : MonoBehaviour
     private void IncreaseNumberOfAcorns()
     {
         numberOfAcorns += 1;
+        Debug.Log(numberOfAcorns.ToString());
     }
 }
